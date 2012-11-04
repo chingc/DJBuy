@@ -2,7 +2,7 @@
 
 A bookmarklet that helps purchase song charts from the DJMAX Technika 3 [website][1].
 
-Buying charts is a simple but tedious task.  It takes too many clicks and way more time than it should.  DJBuy helps by simplifying the process down to a single click.
+Buying charts is a simple but tedious task.  It takes too many clicks and way more time than it should.  DJBuy helps by reducing the number of clicks required and bypassing pointless page redirects, making the entire process lightning fast.
 
 
 ## Screenshots
