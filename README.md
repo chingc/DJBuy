@@ -14,8 +14,8 @@ Nothing to buy.  \[[djbuy_03.png][s3]\]
 
 ## Installation
 
-- Create a new bookmark.  You may call it whatever you like.
-- Copy and paste the code found [here][2] as the URL of the bookmark.
+1. Create a new bookmark.  You may call it whatever you like.
+2. Copy and paste the code found [here][2] as the URL of the bookmark.
 
 
 ## Usage
@@ -28,6 +28,7 @@ Note: DJBuy will only work in the Max Point Shop for Star and Pop Mixing charts.
 ## Tested Under
 
 - Google Chrome
+- Mozilla Firefox
 
 If DJBuy works under a web browser not listed here, please let me know.  You may contact me by the email address found [here][3].
 
