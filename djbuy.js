@@ -9,7 +9,7 @@ javascript:(function () {
         points_needed = (function () {
             var sum = 0;
             $.map($.map($('.i_check:enabled').siblings('font'), function (element) {
-                return parseInt(element.innerText.replace(/,/g, ''), 10);
+                return parseInt(element.innerHTML.replace(/,/g, ''), 10);
             }), function (element) {
                 sum += element;
             });
