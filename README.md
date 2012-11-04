@@ -25,12 +25,12 @@ Navigate to a song with charts you wish to purchase then click the newly created
 Note: DJBuy will only work in the Max Point Shop for Star and Pop Mixing charts.
 
 
-## Tested Under
+## Works Under
 
 - Google Chrome
 - Mozilla Firefox
 
-If DJBuy works under a web browser not listed here, please let me know.  You may contact me by the email address found [here][3].
+If DJBuy works or doesn't work with a web browser not listed here, please let me know.  You may contact me by the email address found [here][3].
 
 
 ## License
