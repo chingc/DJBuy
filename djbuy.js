@@ -1,10 +1,11 @@
 javascript:(function () {
     'use strict';
-    var points,
+    var match = /djmaxcrew\.com\/maxshop\/shop_music_detail\.asp\?m=[01]&i=[a-zA-Z0-9]+/,
+        points,
         points_needed,
         output,
         si;
-    if (location.hostname === 'www.djmaxcrew.com' && /\?m=[01]&i=[a-zA-Z0-9]+/.test(location.search)) {
+    if (match.test(location.hostname + location.pathname + location.search)) {
         points = parseInt($('.login_maxpoint .point_blue').text().replace(/,/g, ''), 10);
         points_needed = (function () {
             var sum = 0;
