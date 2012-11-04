@@ -7,9 +7,9 @@ Buying charts is a simple but tedious task.  It takes too many clicks and way mo
 
 ## Screenshots
 
-Proceed with purchase?  [image][s1]<br />
-Purchase complete!  [image][s2]<br />
-Nothing to buy.  [image][s3]
+Proceed with purchase?  \[[djbuy_01.png][s1]\]<br />
+Purchase complete!  \[[djbuy_02.png][s2]\]<br />
+Nothing to buy.  \[[djbuy_03.png][s3]\]
 
 
 ## Installation
