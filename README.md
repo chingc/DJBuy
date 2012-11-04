@@ -30,7 +30,7 @@ Note: DJBuy will only work in the Max Point Shop for Star and Pop Mixing charts.
 - Google Chrome
 - Mozilla Firefox
 
-If DJBuy works or doesn't work with a web browser not listed here, please let me know.  You may contact me by the email address found [here][3].
+If DJBuy works or doesn't work with a web browser not listed here, please let me know.  My email address can be found [here][3].
 
 
 ## License
