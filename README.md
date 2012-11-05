@@ -20,7 +20,7 @@ Nothing to buy.  \[[djbuy_03.png][s3]\]
 
 ## Usage
 
-Navigate to a song with charts you wish to purchase then click the newly created bookmark.  You'll be presented with a dialog box asking if you wish to proceed.  Agree, and DJBuy will automatically purchase all charts for you.  It'll then return you to the previous page.
+Navigate to a song with charts you wish to purchase then click the newly created bookmark.  You will be presented with a dialog box asking if you wish to proceed.  Agree, and DJBuy will automatically purchase all charts for you.  It will then return you to the previous page.
 
 Note: DJBuy will only work in the Max Point Shop for Star and Pop Mixing charts.
 
@@ -29,8 +29,10 @@ Note: DJBuy will only work in the Max Point Shop for Star and Pop Mixing charts.
 
 - Google Chrome
 - Mozilla Firefox
+- MS Internet Explorer
+- Apple Safari
 
-If DJBuy works or doesn't work with a web browser not listed here, please let me know.  My email address can be found [here][3].
+If DJBuy works \[or not\] with a web browser not listed here, please let me know.  My email address can be found [here][3].
 
 
 ## License
