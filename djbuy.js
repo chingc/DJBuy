@@ -1,4 +1,4 @@
-javascript:(function () {
+javascript:(/* DJBuy, version 1.1, https://github.com/smwst/DJBuy */ function () {
     'use strict';
     var match = /djmaxcrew\.com\/maxshop\/shop_music_detail\.asp\?m=[01]&i=[a-zA-Z0-9]+/,
         points,
