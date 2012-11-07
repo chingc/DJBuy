@@ -14,7 +14,7 @@ Nothing to buy.  \[[djbuy_03.png][s3]\]
 
 ## Installation
 
-1. Create a new bookmark.  You may call it whatever you like.
+1. Create a new browser bookmark.  You may call it whatever you like.
 2. Copy and paste the code found [here][2] as the URL of the bookmark.
 
 
