@@ -1,36 +1,36 @@
-javascript:(/* DJBuy, version 1.2, https://github.com/smwst/DJBuy */ function () {
+javascript:(/* DJBuy, version 1.3, https://github.com/smwst/DJBuy */ function () {
     'use strict';
-    var match = /djmaxcrew\.com\/maxshop\/shop_music_detail\.asp\?m=[01]&i=[a-zA-Z0-9]+/,
+    var to_int = function (str) {
+            return parseInt(str.replace(/,/g, ''), 10);
+        },
+        match = /djmaxcrew\.com\/maxshop\/shop_music_detail\.asp\?m=[01]&i=[a-zA-Z0-9]+/,
+        message,
         points,
         points_needed,
-        output,
-        si;
+        purchase_id;
     if (match.test(location.hostname + location.pathname + location.search)) {
-        points = parseInt($('.login_maxpoint .point_blue').text().replace(/,/g, ''), 10);
+        points = to_int($('.login_maxpoint .point_blue').text());
         points_needed = (function () {
             var sum = 0;
-            $.map($.map($('.i_check:enabled').siblings('font'), function (element) {
-                return parseInt(element.innerHTML.replace(/,/g, ''), 10);
-            }), function (element) {
-                sum += element;
+            $('.i_check:enabled').siblings('font').each(function () {
+                sum += to_int(this.innerHTML);
             });
             return sum;
         }());
-        output = 'Available Max Points: ' + points + '\nMax Points Needed: ' + points_needed + '\n\n';
-        si = [];
+        message = 'Available Max Points: ' + points + '\nMax Points Needed: ' + points_needed + '\n\n';
         if (points_needed === 0) {
-            alert(output + 'Nothing to buy.  Returning...');
+            alert(message + 'Nothing to buy.  Returning...');
             history.back();
         } else if (points_needed > points) {
-            alert(output + 'Not enought Max Points to buy everything.');
+            alert(message + 'Not enought Max Points to buy everything.');
         } else {
-            if (confirm(output + 'Proceed with purchase?')) {
-                $.map($('.i_check:enabled'), function (element) {
-                    si.push(element.value, '|');
+            if (confirm(message + 'Proceed with purchase?')) {
+                purchase_id = [];
+                $('.i_check:enabled').each(function () {
+                    purchase_id.push(this.value);
                 });
-                si.pop();
                 $.ajax({
-                    url: 'http://' + location.hostname + '/maxshop/ProcShopMusic.asp?si=' + si.join('')
+                    url: 'http://' + location.hostname + '/maxshop/ProcShopMusic.asp?si=' + purchase_id.join('|')
                 }).done(function () {
                     alert('Purchased!  You have ' + (points - points_needed) + ' Max Points left.\n\nReturning...');
                     history.back();
