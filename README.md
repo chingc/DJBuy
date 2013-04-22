@@ -1,8 +1,8 @@
 # DJBuy
 
-A bookmarklet to facilitate purchases from the DJMAX Technika 3 [website][1].
+A bookmarklet to facilitate purchases from the DJMAX Technika 3 Max Point Shop.
 
-Buying charts is a simple but tedious task.  It takes too many clicks and way more time than it should.  DJBuy helps by reducing the number of clicks required and bypassing pointless page redirects, making the entire process lightning fast.
+Buying items is a simple but tedious task.  It takes too many clicks and way more time than it should.  DJBuy is designed to purchase all charts of a song with a single click, avoiding extra clicking and page redirects.
 
 
 ## Screenshots
@@ -25,27 +25,27 @@ Navigate to a song with charts you wish to purchase then click the newly created
 Note: DJBuy will only work in the Max Point Shop for Star and Pop Mixing charts.
 
 
-## Works Under
+## Support
+
+DJBuy has been tested or reported to work with the following desktop browsers:
 
 - Google Chrome
 - Mozilla Firefox
 - MS Internet Explorer
 - Apple Safari
-
-If DJBuy works \[or not\] with a web browser not listed here, please let me know.  My email address can be found [here][3].
+- Opera Browser
 
 
 ## License
 
-DJBuy is distributed under the Simplified BSD license.  See [LICENSE][4] for more details.
+DJBuy is distributed under the Simplified BSD license.  See [LICENSE][3] for more details.
 
 
 
 
 [1]: http://www.djmaxcrew.com/ "DJMAX Technika 3"
 [2]: https://raw.github.com/smwst/DJBuy/master/djbuy.min.js "DJBuy"
-[3]: https://github.com/smwst "smwst (Github)"
-[4]: https://github.com/smwst/DJBuy/blob/master/LICENSE "License"
+[3]: https://github.com/smwst/LICENSE#readme "License"
 
 [s1]: http://smwst.github.com/DJBuy/djbuy_01.png
 [s2]: http://smwst.github.com/DJBuy/djbuy_02.png
