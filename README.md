@@ -4,6 +4,8 @@ A bookmarklet to facilitate purchases from the DJMAX Technika 3 Max Point Shop.
 
 Buying items is a simple but tedious task.  It takes too many clicks and way more time than it should.  DJBuy is designed to purchase all charts of a song with a single click, avoiding extra clicking and page redirects.
 
+Introduced in DJBuy 1.4 is the ability to purchase an entire page of icons, plates, and titles at a time!
+
 
 ## Screenshots
 

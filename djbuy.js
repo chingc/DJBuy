@@ -1,42 +1,73 @@
-javascript:(/* DJBuy, version 1.3, https://github.com/smwst/DJBuy */ function () {
+javascript:(function () {
     'use strict';
     var to_int = function (str) {
             return parseInt(str.replace(/,/g, ''), 10);
         },
-        match = /djmaxcrew\.com\/maxshop\/shop_music_detail\.asp\?m=[01]&i=[a-zA-Z0-9]+/,
+        sum = function (jQuery_obj) {
+            var result = 0;
+            jQuery_obj.each(function () {
+                result += to_int(this.innerHTML);
+            });
+            return result;
+        },
+        about = '\n\n\n\nDJBuy 1.4, chingc.tumblr.com',
+        my_location = location.hostname + location.pathname,
+        shop_music = /djmaxcrew\.com\/maxshop\/shop_music_detail\.asp/.test(my_location),
+        shop_item = /djmaxcrew\.com\/maxshop\/shop_dj_(icon|title).asp/.test(my_location),
         message,
         points,
         points_needed,
-        purchase_id;
-    if (match.test(location.hostname + location.pathname + location.search)) {
+        purchase_id,
+        purchase_success;
+    if (shop_music || shop_item) {
         points = to_int($('.login_maxpoint .point_blue').text());
-        points_needed = (function () {
-            var sum = 0;
-            $('.i_check:enabled').siblings('font').each(function () {
-                sum += to_int(this.innerHTML);
-            });
-            return sum;
-        }());
+        points_needed = shop_music ? sum($('.i_check:enabled').siblings('font')) : sum($('.point > font'));
         message = 'Available Max Points: ' + points + '\nMax Points Needed: ' + points_needed + '\n\n';
         if (points_needed === 0) {
-            alert(message + 'Nothing to buy.  Returning...');
+            alert(message + 'Nothing to buy.  Returning...' + about);
             history.back();
         } else if (points_needed > points) {
-            alert(message + 'Not enought Max Points to buy everything.');
+            alert(message + 'Not enought Max Points to buy everything.' + about);
         } else {
-            if (confirm(message + 'Proceed with purchase?')) {
+            if (confirm(message + 'Proceed with purchase?' + about)) {
                 purchase_id = [];
-                $('.i_check:enabled').each(function () {
-                    purchase_id.push(this.value);
-                });
-                $.ajax({
-                    url: 'http://' + location.hostname + '/maxshop/ProcShopMusic.asp?si=' + purchase_id.join('|')
-                }).done(function () {
-                    alert('Purchased!  You have ' + (points - points_needed) + ' Max Points left.\n\nReturning...');
+                purchase_success = true;
+                if (shop_music) {
+                    $('.i_check:enabled').each(function () {
+                        purchase_id.push(this.value);
+                    });
+                    $.ajax({
+                        url: 'http://' + location.hostname + '/maxshop/ProcShopMusic.asp?si=' + purchase_id.join('|'),
+                        async: false
+                    }).done(function () {
+                        alert('Purchased!' + about);
+                    }).fail(function () {
+                        alert('Unable to make purchase.' + about);
+                    });
                     history.back();
-                }).fail(function () {
-                    alert('Unable to make purchase.\n\nReload the page or try again later.');
-                });
+                } else {
+                    $('li[onclick]').each(function () {
+                        var pid;
+                        pid = /moveShopItemConfirm\('(\w+)'\)/.exec(this.onclick);
+                        if (pid) {
+                            purchase_id.push(pid[1])
+                        }
+                    });
+                    $.each(purchase_id, function (i, value) {
+                        $.ajax({
+                            url: 'http://' + location.hostname + '/maxshop/ProcShopItem.asp?i=' + value,
+                            async: false
+                        }).fail(function () {
+                            purchase_success = false;
+                        });
+                    });
+                    if (purchase_success) {
+                        alert('Items purchased!' + about);
+                    } else {
+                        alert('Unable to make one or more purchases.' + about);
+                    }
+                    location.reload();
+                }
             }
         }
     }
