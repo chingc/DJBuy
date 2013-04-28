@@ -49,6 +49,6 @@ DJBuy is distributed under the Simplified BSD license.  See [LICENSE][3] for mor
 [2]: https://raw.github.com/smwst/DJBuy/master/djbuy.min.js "DJBuy"
 [3]: https://github.com/smwst/LICENSE#readme "License"
 
-[s1]: http://smwst.github.com/DJBuy/djbuy_01.png
-[s2]: http://smwst.github.com/DJBuy/djbuy_02.png
-[s3]: http://smwst.github.com/DJBuy/djbuy_03.png
+[s1]: http://smwst.github.io/DJBuy/djbuy_01.png
+[s2]: http://smwst.github.io/DJBuy/djbuy_02.png
+[s3]: http://smwst.github.io/DJBuy/djbuy_03.png
