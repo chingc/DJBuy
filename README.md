@@ -17,7 +17,7 @@ Nothing to buy.  \[[djbuy_03.png][s3]\]
 ## Installation
 
 1. Create a new browser bookmark.  You may call it whatever you like.
-2. Copy and paste the code found [here][2] as the URL of the bookmark.
+2. Copy and paste the code found [here][download] as the URL of the bookmark.
 
 
 ## Usage
@@ -40,15 +40,16 @@ DJBuy has been tested or reported to work with the following desktop browsers:
 
 ## License
 
-DJBuy is distributed under the Simplified BSD license.  See [LICENSE][3] for more details.
+DJBuy is distributed under the Simplified BSD license.  See [LICENSE][license] for more details.
 
 
 
 
 [1]: http://www.djmaxcrew.com/ "DJMAX Technika 3"
-[2]: https://raw.github.com/smwst/DJBuy/master/djbuy.min.js "DJBuy"
-[3]: https://github.com/smwst/LICENSE#readme "License"
 
 [s1]: http://smwst.github.io/DJBuy/djbuy_01.png
 [s2]: http://smwst.github.io/DJBuy/djbuy_02.png
 [s3]: http://smwst.github.io/DJBuy/djbuy_03.png
+
+[download]: https://github.com/smwst/DJBuy/raw/master/djbuy.min.js "DJBuy"
+[license]: https://github.com/smwst/LICENSE#readme "License"
