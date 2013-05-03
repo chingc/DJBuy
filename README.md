@@ -40,7 +40,7 @@ DJBuy has been tested or reported to work with the following desktop browsers:
 
 ## License
 
-DJBuy is distributed under the Simplified BSD license.  See [LICENSE][license] for more details.
+DJBuy is Simplified BSD licensed.  See [LICENSE][license] for more details.
 
 
 
@@ -52,4 +52,4 @@ DJBuy is distributed under the Simplified BSD license.  See [LICENSE][license] f
 [s3]: http://smwst.github.io/DJBuy/djbuy_03.png
 
 [download]: https://github.com/smwst/DJBuy/raw/master/djbuy.min.js "DJBuy"
-[license]: https://github.com/smwst/LICENSE#readme "License"
+[license]: https://github.com/smwst/DJBuy/blob/master/LICENSE.md "License"
