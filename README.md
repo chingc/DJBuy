@@ -40,7 +40,7 @@ DJBuy has been tested or reported to work with the following desktop browsers:
 
 ## License
 
-DJBuy is Simplified BSD licensed.  See [LICENSE][license] for more details.
+DJBuy is Simplified BSD licensed.  See [LICENSE][license] for details.
 
 
 
