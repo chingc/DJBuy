@@ -47,9 +47,9 @@ DJBuy is Simplified BSD licensed.  See [LICENSE][license] for details.
 
 [1]: http://www.djmaxcrew.com/ "DJMAX Technika 3"
 
-[s1]: http://smwst.github.io/DJBuy/djbuy_01.png
-[s2]: http://smwst.github.io/DJBuy/djbuy_02.png
-[s3]: http://smwst.github.io/DJBuy/djbuy_03.png
+[s1]: http://chingc.github.io/DJBuy/djbuy_01.png
+[s2]: http://chingc.github.io/DJBuy/djbuy_02.png
+[s3]: http://chingc.github.io/DJBuy/djbuy_03.png
 
-[download]: https://github.com/smwst/DJBuy/raw/master/djbuy.min.js "DJBuy"
-[license]: https://github.com/smwst/DJBuy/blob/master/LICENSE.md "License"
+[download]: https://github.com/chingc/DJBuy/raw/master/djbuy.min.js "DJBuy"
+[license]: https://github.com/chingc/DJBuy/blob/master/LICENSE.md "License"
