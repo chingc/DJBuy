@@ -1,55 +1,36 @@
 # DJBuy
 
-A bookmarklet to facilitate purchases from the DJMAX Technika 3 Max Point Shop.
+Buying items from the [DJMAX](http://www.djmaxcrew.com/) Technika 3 Max Point Shop is a simple but tedious task.  It takes too many clicks and more time than it should.
 
-Buying items is a simple but tedious task.  It takes too many clicks and way more time than it should.  DJBuy is designed to purchase all charts of a song with a single click, avoiding extra clicking and page redirects.
+DJBuy is a bookmarklet designed to purchase all charts of a song with a single click, saving you lots of unnecessary clicks and page redirects.  Purchasing an entire page of icons, plates, or titles at a time is also supported.
 
-Introduced in DJBuy 1.4 is the ability to purchase an entire page of icons, plates, or titles at a time!
+## End of Life
 
-
-## Screenshots
-
-Proceed with purchase?  \[[djbuy_01.png][s1]\]<br />
-Purchase complete!  \[[djbuy_02.png][s2]\]<br />
-Nothing to buy.  \[[djbuy_03.png][s3]\]
-
+Official support for DJMAX Technika 3 ended on December 31, 2013.  The online service and website are no longer available.  As a result, there will be no further updates or releases of DJBuy.
 
 ## Installation
 
-1. Create a new browser bookmark.  You may call it whatever you like.
-2. Copy and paste the code found [here][download] as the URL of the bookmark.
-
+Simply create a new browser bookmark and paste this [code](./djbuy.min.js) as its URL.
 
 ## Usage
 
-Navigate to a song with charts you wish to purchase then click the newly created bookmark.  You will be presented with a dialog box asking if you wish to proceed.  Agree, and DJBuy will automatically purchase all charts for you.  It will then return you to the previous page.
+Navigate to a song with charts you wish to purchase then click the newly created bookmark.  You will be presented with a dialog box asking if you wish to proceed.  [[Screenshot]](./djbuy_01.png)
 
-Note: DJBuy will only work in the Max Point Shop for Star and Pop Mixing charts.
+Agree, and DJBuy will automatically purchase all charts for you.  It will then return you to the previous page.  [[Screenshot]](./djbuy_02.png)
 
+DJBuy will let you know if there is nothing to buy.  [[Screenshot]](./djbuy_03.png)
 
-## Support
+## Browser Support
 
 DJBuy has been tested or reported to work with the following desktop browsers:
 
-- Google Chrome
-- Mozilla Firefox
-- MS Internet Explorer
-- Apple Safari
-- Opera Browser
+- Chrome
+- Firefox
+- Internet Explorer
+- Safari
+- Opera
 
+## About Technika
 
-## License
-
-DJBuy is Simplified BSD licensed.  See [LICENSE][license] for details.
-
-
-
-
-[1]: http://www.djmaxcrew.com/ "DJMAX Technika 3"
-
-[s1]: http://chingc.github.io/DJBuy/djbuy_01.png
-[s2]: http://chingc.github.io/DJBuy/djbuy_02.png
-[s3]: http://chingc.github.io/DJBuy/djbuy_03.png
-
-[download]: https://github.com/chingc/DJBuy/raw/master/djbuy.min.js "DJBuy"
-[license]: https://github.com/chingc/DJBuy/blob/master/LICENSE.md "License"
+- [Wikipedia Article](https://en.wikipedia.org/wiki/DJMax_Technika_3)
+- [Cypher Gate](http://cyphergate.net/)
