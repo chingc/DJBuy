@@ -10,7 +10,7 @@ javascript:(function () {
             });
             return result;
         },
-        about = "\n\n\n\nDJBuy 1.4, chingc.tumblr.com",
+        about = "\n\n\n\nDJBuy 1.4.2, https://github.com/chingc/DJBuy",
         my_location = location.hostname + location.pathname,
         shop_music = /djmaxcrew\.com\/maxshop\/shop_music_detail\.asp/.test(my_location),
         shop_item = /djmaxcrew\.com\/maxshop\/shop_dj_(icon|title).asp/.test(my_location),
